@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import bannerImg from '../assets/restauranfood.jpg'
 
 const Header = () => {
@@ -10,11 +10,11 @@ const Header = () => {
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
-            We are a family owned Mediterranean restaurant, focused on traditional recipes served with modern twist. 
+            We are a family owned Mediterranean restaurant, focused on traditional recipes served with modern twist.
           </p>
-          {/* <Link to="/booking"> */}
-            <button aria-label='On Click'>Reserve a Table</button>
-             {/* </Link> */}
+          <Link to="/booking">
+            <button aria-label="On Click">Reserve a Table</button>
+          </Link>
         </div>
         <div className='banner-img'>
           <img src={bannerImg} alt="Restaurant food"/>
